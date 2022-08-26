@@ -10,38 +10,45 @@
 <style>
     @keyframes sliding {
         0% {
-            background-color: red;
+            background-color: yellow;
             left: 0;
             top: 0;
-            transform: scale(0.5);
+
         }
 
         12.5% {
-            top: 300px background-color:yellow;
+            top: 300px;
+            background-color: red;
         }
 
         25% {
             top: 0;
+            background-color: yellow;
         }
 
         37.5% {
             top: 300px;
+            background-color: red;
         }
 
         50% {
             top: 0;
+            background-color: yellow;
         }
 
         62.5 {
             top: 300px;
+            background-color: yellow;
         }
 
         75% {
             top: 0;
+            background-color: red;
         }
 
         87.5% {
             top: 300px;
+            background-color: yellow;
         }
 
         100% {
@@ -64,7 +71,7 @@
         background-color: red;
         position: relative;
         border-radius: 50%;
-        animation: sliding 2s ease-in-out 0.5s infinite alternate;
+        animation: sliding 8s ease-in-out 0.5s infinite alternate;
         animation-play-state: running;
     }
 </style>
