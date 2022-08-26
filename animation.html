@@ -8,6 +8,49 @@
     <title>Animation</title>
 </head>
 <style>
+    @keyframes sliding {
+        0% {
+            background-color: red;
+            left: 0;
+            top: 0;
+            transform: scale(0.5);
+        }
+
+        12.5% {
+            top: 300px background-color:yellow;
+        }
+
+        25% {
+            top: 0;
+        }
+
+        37.5% {
+            top: 300px;
+        }
+
+        50% {
+            top: 0;
+        }
+
+        62.5 {
+            top: 300px;
+        }
+
+        75% {
+            top: 0;
+        }
+
+        87.5% {
+            top: 300px;
+        }
+
+        100% {
+            background-color: magenta;
+            left: 1100px;
+            top: 0;
+        }
+    }
+
     .stage {
         height: 400px;
         width: 1200px;
@@ -19,11 +62,15 @@
         height: 100px;
         width: 100px;
         background-color: red;
+        position: relative;
         border-radius: 50%;
+        animation: sliding 2s ease-in-out 0.5s infinite alternate;
+        animation-play-state: running;
     }
 </style>
 
 <body>
+    <h1>Lets explore Animation</h1>
     <div class="stage">
         <div class="ball"></div>
     </div>
